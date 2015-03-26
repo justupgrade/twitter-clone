@@ -17,7 +17,7 @@
 					$hashed = $row['password'];
 
 					if(password_verify($password, $hashed)) {
-						echo "<p class='success'> Account Created! <small> You'll be redirected in a moment...</small></p>";
+						echo "<p class='success'> Loged in successfully! <small> You'll be redirected in a moment...</small></p>";
 						//login:
 						session_start();
 						$user = new User($row['id'], $email);
@@ -41,6 +41,7 @@
 
 
 <fieldset>
+	<legend>LogIn:</legend>
 	<form action='' method='post'>
 	<p><pre><label>Email:   </label></pre><input type='text' name='email' required></p>
 	<p><pre><label>Password:</label></pre><input type='password' name='password' required></p>

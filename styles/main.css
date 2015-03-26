@@ -14,10 +14,11 @@ nav ul li {
 }
 
 #welcome-cont {
-	color: blue;
+	color: #2CB1F2;
 	font-weight: bold;
+	display: inline;
 }
 
 #logout-cont {
-
+	float: right;
 }
