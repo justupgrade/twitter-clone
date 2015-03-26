@@ -4,7 +4,7 @@
 
 	include_once "./classes/User.php";
 	//styles, page title
-	include "./includes/header.php"; 
+	include_once "./includes/header.php"; 
 
 	session_start();
 
@@ -13,15 +13,15 @@
 	} else {
 		//redirect:
 		header('Location: http://localhost/git/twitter-clone/login.php');
-
+		die();
 	}
 
-	include "./includes/nav.php";
+	include_once "./includes/nav.php";
 	//user posts section
-	include "./includes/user_post_section.php";
+	include_once "./includes/user_post_section.php";
 	//friends posts section
-	include "./includes/firends_posts_section.php";
+	include_once "./includes/firends_posts_section.php";
 	//footer
-	include "./includes/footer.php";
+	include_once "./includes/footer.php";
 
 ?>

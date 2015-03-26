@@ -22,3 +22,11 @@ nav ul li {
 #logout-cont {
 	float: right;
 }
+
+.post {
+	border: 1px solid gray;
+}
+
+.post label {
+	background: gray;
+}
