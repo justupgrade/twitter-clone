@@ -22,7 +22,7 @@
 		}
 	}
 
-	
+
 
 	//display all posts:
 	$query = "SELECT id,title,content FROM posts WHERE posts.user_id=".$id;
@@ -34,7 +34,7 @@
 	} else {
 		while($row = $result->fetch_array(MYSQLI_ASSOC)) {
 			echo "<form class='post' method='post' action='post.php'>";
-			echo "<input type='submit' value=" . $row['title'] . "><br>";
+			echo "<input name='postBtn' type='submit' value=" . $row['title'] . "><br>";
 			echo "<input type='hidden' name='post_id' value='".$row['id']."'>";
 			echo "<span>" . $row['content'] . "</span>";
 			echo "</form>";

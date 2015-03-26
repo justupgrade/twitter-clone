@@ -30,3 +30,18 @@ nav ul li {
 .post label {
 	background: gray;
 }
+
+.comment {
+	padding-left: 10px;
+	color: gray;
+}
+
+.comment span {
+	color: blue;
+}
+
+.comment strong small {
+	width: 300px;
+	display: inline-block;
+	border-bottom: 2px solid black;
+}

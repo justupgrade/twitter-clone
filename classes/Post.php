@@ -18,6 +18,10 @@
 
 			return $out;
 		}
+
+		public function getID() {
+			return $this->id;
+		}
 	}
 
 ?>
