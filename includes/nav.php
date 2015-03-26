@@ -1,5 +1,6 @@
 <body>
-	<div id="welcome_cont"> Username </div>
+	<div id="welcome-cont"> <?php echo $user->getEmail(); ?> </div>
+	<div id="logout-cont"><a href='logout.php'>Logout</a></div>
 	<nav>
 		<ul>
 			<li><a href='index.php'>Home</a></li>

@@ -6,3 +6,18 @@ nav ul li {
 	margin-left: 10px;
 	list-style-type: none;
 }
+
+.invalid-data,failure {
+	font-weight: bold;
+	color: orange;
+	font-size: 1.5em;
+}
+
+#welcome-cont {
+	color: blue;
+	font-weight: bold;
+}
+
+#logout-cont {
+
+}
