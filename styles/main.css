@@ -1,0 +1,8 @@
+nav ul {
+	overflow: hidden;
+}
+nav ul li {
+	float: left;
+	margin-left: 10px;
+	list-style-type: none;
+}
