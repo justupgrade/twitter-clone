@@ -32,7 +32,7 @@
 					echo "<p class='success'> Account Created! <small> You'll be redirected in a moment...</small></p>";
 					//login:
 					session_start();
-					$id = $result->insert_id;
+					$id = $conn->insert_id;
 					$user = new User($id, $email);
 					$_SESSION['user'] = $user;
 					header("refresh:2, url=http://localhost/git/twitter-clone/index.php");

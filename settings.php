@@ -20,8 +20,6 @@
 		die();
 	}
 
-	include "./includes/nav.php";
-
 	//change password;
 ?>
 <?php 
@@ -41,6 +39,8 @@
 	}
 ?>
 <?php
+	include "./includes/nav.php";
+
 	if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['changePassBtn'])) {
 		$password = $_POST['password'];
 		$new = $_POST['new'];
@@ -83,6 +83,8 @@
 	function invalidDataMsg() {
 		return "<p class='failure'> Invalid data. Try again. </p>";
 	}
+
+
 ?>
 <fieldset>
 	<legend>Chnage password</legend>
