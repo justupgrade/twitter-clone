@@ -10,6 +10,8 @@
 					<li><a href='index.php'>Home</a></li>
 					<li><a href='friends.php'>Friends</a></li>
 					<li><a href='settings.php'>Settings</a></li>
+					<li><a href='messages.php'>Messages</a></li>
+					<li><a href='users.php'>Users</a></li>
 				</ul>
 			</nav>
 END;

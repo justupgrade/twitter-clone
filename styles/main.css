@@ -45,3 +45,9 @@ nav ul li {
 	display: inline-block;
 	border-bottom: 2px solid black;
 }
+
+.test-class {
+	color: blue;
+}
+
+

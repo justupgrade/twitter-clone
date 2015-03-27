@@ -1,7 +1,8 @@
-<!DOCTYPE html>
+
 <?php 
-	include './includes/header.php'; 
-	include './classes/User.php';
+	session_start();
+	//include_once './includes/header.php'; 
+	include_once './classes/User.php';
 ?>
 <?php
 	if($_SERVER['REQUEST_METHOD'] == "POST") {
@@ -20,7 +21,7 @@
 				];
 				$hased = password_hash($password, PASSWORD_BCRYPT, $options);
 
-				include 'connection.php';
+				include_once 'connection.php';
 				$query = 'INSERT INTO users (email,password) ';
 				$query .= "VALUES ('".$email."',";
 				$query .= "'" . $hased . "')";
@@ -31,7 +32,7 @@
 				if($result){
 					echo "<p class='success'> Account Created! <small> You'll be redirected in a moment...</small></p>";
 					//login:
-					session_start();
+					
 					$id = $conn->insert_id;
 					$user = new User($id, $email);
 					$_SESSION['user'] = $user;

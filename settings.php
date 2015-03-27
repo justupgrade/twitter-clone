@@ -28,13 +28,15 @@
 		$query = "DELETE FROM users WHERE id=".$user->getID();
 		$conn->query($query);
 
+		echo $query;
+
 		$user = null;
 		unset($_SESSION['user']);
 		session_destroy();
 
 		echo "Account removed.";
 
-		header('refresh: 2, url=http://localhost/git/twitter-clone/index.php');
+		//header('refresh: 2, url=http://localhost/git/twitter-clone/index.php');
 		die();
 	}
 ?>
